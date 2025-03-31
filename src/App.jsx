@@ -18,7 +18,7 @@
 // }
 
 // export default App;
-
+  
  
 
 // const App=()=>{
@@ -75,16 +75,160 @@
 
 // export default app;
 
-
-// const data = ()=>{
+// import Collage from "./Collage";
+// const name ="RGPV"
+// const seats ="454"
+// const fees ="23000"
+// import Cybrom from "./Cybrom";
+// const collage = {
+//     name :"RGPV", 
+//     fees : 4500,
+//     city : "Bhopal",
+//     subject : "python"
+// }   
+// const Data = ()=>{
+//   const Subject = ["html","css","python","cpp","react"];
+//   const ans = Subject.map((key)=>{
+//     return(
+//       <>
+//       <option>{key}</option>
+//       </>
+//     )
+//   });
 //   return(
 //   <>
-//   Enter your name :  <input type="text" />
-//   <br /><br />
-//   Enter your age : <input type="text" /> 
+//  <h1 align="center">welcome to cybrom</h1>
+//  <selec>{ans}</select>
 //   </>
 //   )
 // }
-// export default data;
+// export default Data;
 
 
+
+
+//..........................................................................................................
+
+// const Student = [
+//   {
+//     "rollno":124,
+//     "name":"viplove",
+//     "city":"bhopla",
+//     "fees":5467567
+
+// },
+// {
+//   "rollno":124,
+//   "name":"jkdbcj",
+//   "city":"bhopla",
+//   "fees":5467567
+
+// },
+// {
+//   "rollno":124,
+//   "name":"vbjkbcjk",
+//   "city":"bhopla",
+//   "fees":5467567
+
+// },
+// {
+//   "rollno":124,
+//   "name":"shubham",
+//   "city":"bhopla",
+//   "fees":5467567
+
+// },
+// {
+//   "rollno":127,
+//   "name":"ankit",
+//   "city":"bhopal",
+//   "fees":5467567
+
+// },
+// {
+//   "rollno":798,
+//   "name":"rohan",
+//   "city":"indore",
+//   "fees":5467567
+
+// },
+// ]
+
+
+// const ans = Student.map((key)=>{
+//   return(
+//     <>
+//     <tr>
+//       <td>{key.rollno}</td>
+//       <td>{key.name}</td>
+//       <td>{key.city}</td>
+//       <td>{key.fees}</td>
+
+
+//     </tr>
+    
+//     </>
+//   )
+
+  
+// })
+
+// const Data = ()=>{
+ 
+//   return(
+//   <>
+//  <h1 align="center">welcome to cybrom</h1>
+
+//  <>
+ 
+//  <table border="2" width="600" height='400'>
+//   <tr>
+//     <th>rollno</th>
+//     <th>name</th>
+//     <th>city</th>
+//     <th>fees</th>
+    
+//   </tr>
+//   {ans}
+//  </table>
+//  </>
+
+//   </>
+//   )
+// }
+// export default Data;
+
+
+//...................................................................................................
+
+
+
+// const Data =()=>{
+
+
+//   return(
+//   <>
+//  <h1 align="center">welcome to cybrom</h1>
+// </>
+//   )
+// }
+// export default Data;
+
+
+const Data = ()=>{
+  const Subject = ["html","css","python","cpp","react"];
+  const ans = Subject.map((key)=>{
+    return(
+      <>
+      <option>{key}</option>
+      </>
+    )
+  });
+  return(
+  <>
+ <h1 align="center">welcome to cybrom</h1>
+ <select>{ans}</select>
+  </>
+  )
+}
+export default Data;
