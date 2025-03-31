@@ -75,6 +75,13 @@
 
 // export default app;
 
+
+
+//.............................................................................................
+
+
+
+
 // import Collage from "./Collage";
 // const name ="RGPV"
 // const seats ="454"
@@ -86,6 +93,12 @@
 //     city : "Bhopal",
 //     subject : "python"
 // }   
+
+//..............................................................................................................
+
+
+
+
 // const Data = ()=>{
 //   const Subject = ["html","css","python","cpp","react"];
 //   const ans = Subject.map((key)=>{
@@ -98,7 +111,7 @@
 //   return(
 //   <>
 //  <h1 align="center">welcome to cybrom</h1>
-//  <selec>{ans}</select>
+//  <select>{ans}</select>
 //   </>
 //   )
 // }
@@ -107,7 +120,15 @@
 
 
 
+
+
 //..........................................................................................................
+
+
+
+
+
+
 
 // const Student = [
 //   {
@@ -203,32 +224,70 @@
 
 
 
-// const Data =()=>{
 
 
+
+// const Data = ()=>{
+//   const Subject = ["html","css","python","cpp","react"];
+//   const ans = Subject.map((key)=>{
+//     return(
+//       <>
+//       <option>{key}</option>
+//       </>
+//     )
+//   });
 //   return(
 //   <>
 //  <h1 align="center">welcome to cybrom</h1>
-// </>
+//  <select>{ans}</select>
+//   </>
 //   )
 // }
 // export default Data;
 
 
-const Data = ()=>{
-  const Subject = ["html","css","python","cpp","react"];
-  const ans = Subject.map((key)=>{
-    return(
-      <>
-      <option>{key}</option>
-      </>
-    )
-  });
+
+
+
+//.................................................................................................
+
+
+
+import EmpData from "./EmpData";
+import EmpDesign from "./EmpDesign";
+
+
+
+const Hello = ()=>{
+
+  const ans = EmpData.map((key)=><EmpDesign
+  
+  no={key.Empno}
+  nm={key.name} 
+  des={key.designation}
+  sal={key.salary} 
+  />
+
+
+
+  )
   return(
-  <>
- <h1 align="center">welcome to cybrom</h1>
- <select>{ans}</select>
-  </>
+<>
+<h1 align="center">Welcome viplove!!!</h1>
+
+<table border="1" width="600" height="400">
+  <tr>
+    <th>Emp No</th>
+    <th>Emp Name</th>
+    <th>Emp Designation</th>
+    <th>Emp Salary</th>
+  </tr>
+  {ans}
+</table>
+
+
+</>
+
   )
 }
-export default Data;
+export default Hello;
