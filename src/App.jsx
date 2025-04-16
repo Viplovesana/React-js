@@ -965,34 +965,46 @@
 
 
 
-// import Container from 'react-bootstrap/Container';
-// import Nav from 'react-bootstrap/Nav';
-// import Navbar from 'react-bootstrap/Navbar';
 
-import { useState ,createContext} from "react";
-import Comp1 from "./comp1";
+// import { useState ,createContext} from "react";
+// import Comp1 from "./comp1";
 
-const mycontext=createContext();
+// const mycontext=createContext();
 
 
-const App = ()=>{
-  const[user ,setUser]=useState("Mr.Viplove Sana");
+// const App = ()=>{
+//   const[user ,setUser]=useState("Mr.Viplove Sana");
 
-  return(
-      <>
+//   return(
+//       <>
    
-      <h1>
-        Welcome!!!  {user}
-      </h1>
-      <mycontext.Provider value={{user}}>
-        <Comp1/>
+//       <h1>
+//         Welcome!!!  {user}
+//       </h1>
+//       <mycontext.Provider value={{user,setUser}}>
+//         <Comp1/>
 
-      </mycontext.Provider>
+//       </mycontext.Provider>
       
       
       
-      </>
+//       </>
+//   )
+// }
+// export default App;
+// export {mycontext}
+
+//.................................................................................................///
+
+
+
+import Cybrom from "./Cybrom";
+const App=()=>{
+  return(
+    <>
+    <h1>Welcome!!!</h1>
+    <Cybrom/>
+    </>
   )
 }
 export default App;
-export {mycontext}

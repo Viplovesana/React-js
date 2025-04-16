@@ -1,13 +1,13 @@
-import Cybrom2 from "./Cybrom2";
 
 
-const Cybrom = ()=>{
-    return(
+import { mycontext } from "./usercontext";
+import { useContext } from "react";
+const Cybrom =()=>{
+    const {name}=useContext(mycontext)
+    return (
         <>
-     
-        <h1 className="mee">Welcome to cybrom</h1>
-        <Cybrom2/>
+        <h1>Welcome to Cybrom {name}</h1>
         </>
     )
-  }
-  export default Cybrom;
+}
+export default Cybrom;
