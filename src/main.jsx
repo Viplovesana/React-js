@@ -6,11 +6,12 @@ import Usercontext from './usercontext';
 
 
 createRoot(document.getElementById('root')).render(
-   
-     <Usercontext>
-        <App />
-     </Usercontext>
-    
+   <Usercontext>
+       <App />
+   </Usercontext>
+  
+       
+     
    
 )
        
