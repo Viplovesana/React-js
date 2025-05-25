@@ -1035,18 +1035,36 @@
 // export default App;
 
 
-const App=()=>{
-    const handleClick=()=>{
-       alert("button was clicked");
-  }
-  return(
-    <>
+// const App=()=>{
+//     const handleClick=()=>{
+//        alert("button was clicked");
+//   }
+//   return(
+//     <>
   
 
-  <button onClick={handleClick}>click me</button>;
+//   <button onClick={handleClick}>click me</button>;
 
+//     </>
+//   )
+// }
+  
+// export default App;
+
+const App =()=>{
+  const subject=["hindi","english","maths","science"];
+  const show=subject.map((key)=>{
+    return(
+      <>
+      <option value="">{key}</option>
+      </>
+    )
+  })
+  return(
+    <>
+    <select name="" id="">{show}</select>
+    
     </>
   )
 }
-  
 export default App;
