@@ -1,0 +1,20 @@
+{
+    "Students":[
+        {
+        "id": "ec00",
+        "empno": "1313",
+        "name": "Ananya Sahu",
+        "city": "bhopal",
+        "salary": "30000"
+
+        },
+        {
+        "id": "af8f",
+        "empno": "1313",
+        "name": "Ananya Sahu",
+        "salary": "80000",
+        "city": "bhopal"
+
+        }
+    ]
+}

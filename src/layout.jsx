@@ -1,21 +1,22 @@
-import {Link ,Outlet } from "react-router-dom";
- 
-const Layout =()=>{
+
+
+import { Link,Outlet } from "react-router-dom";
+import TopNav from "./TopNav";
+
+const Layout=()=>{
     return(
         <>
-        <nav>
-        <Link to="home">Home</Link>
-        <Link to="about">About Us</Link>
-        <Link to="contact">Contact Us</Link>
-        <hr size="4" color="red"/>
-        </nav>
-        <Outlet/>
+          <TopNav/>
 
-        <hr size="4" color="red"/>
-        <footer>www.mycompany.com all right reserved.</footer>
+{/* <hr size="5" color="red"/> */}
 
-        </>     
+<Outlet/>
+
+{/* <hr size="5" color="red"/> */}
+
+<footer style={{display:"flex",justifyContent:"center",height:"70vh",alignItems:"end"}}>www.MyCompany.com  | All rights reserved.</footer>
+
+        </>
     )
 }
-
-export default Layout;
+export default Layout;
